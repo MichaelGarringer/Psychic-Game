@@ -1,6 +1,9 @@
 h1{color:purple;
-    text-align:center
+    text-align:center;
+    border-bottom: 14px, solid, purple;
 }
 p{color:purple;
 text-align:center;}
 body{background: black}
+img{max-width:250px;
+height:auto;}

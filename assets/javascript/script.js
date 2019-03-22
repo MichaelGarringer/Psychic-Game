@@ -5,10 +5,10 @@ var guesses = 10
 var letters = []
 var computerChoice = []
 //Psychic Function
-window.onload = function(){
+
       var psychic = userInputs[Math.floor(Math.random() * userInputs.length)];
       computerChoice.push(psychic)
-      console.log(psychic[0]);}
+      console.log(psychic[0]);
 
 
 //UserGuess function
@@ -20,7 +20,7 @@ document.onkeyup = function(event){
 //logic
 
 if ((userGuess === computerChoice[0]) && (guesses > 0)) {
-      wins++;
+      wins++; alert("You win!")
 	guesses = 10;
 	letters.length = 0;
 	computerChoice.length = 0;
@@ -31,13 +31,14 @@ if ((userGuess === computerChoice[0]) && (guesses > 0)) {
 else if ((userGuess !== computerChoice[0]) && (guesses > 0)) {
       guesses--}
 
-else {losses++; 
+else {losses++; alert("You lose!")
 guesses = 10;
 	letters.length = 0;
 	computerChoice.length = 0;
 	var psychic = userInputs[Math.floor(Math.random() * userInputs.length)];
 	computerChoice.push(psychic[0]);
       console.log(psychic[0]);
+
 }
 console.log(guesses)
 console.log(wins)

@@ -15,7 +15,7 @@ console.log(psychic[0]);
 document.onkeyup = function (event) {
       var userGuess = event.key
 if(letters.includes(userGuess)){
-      alert("Letter already choosen, pick another")
+      alert("You've already guessed that letter!")
       return
 }
 
@@ -63,7 +63,7 @@ if(letters.includes(userGuess)){
             lettersText.textContent = "Letters you've guessed: " + letters
       }
       else {
-            alert("Please insert a letter from the alphabet")
+            alert("Please insert a letter from the alphabet!")
 
       }
      
